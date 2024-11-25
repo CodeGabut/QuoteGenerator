@@ -1,0 +1,166 @@
+.kontainerUtama{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+    min-width: 200px;
+    max-width: 90%;
+    
+    min-height: 130px;
+    margin-top: 15%;
+    
+    z-index: 11;
+}
+
+.judul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 64px;
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
+   
+}
+
+.kontainerFitur{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 18px;
+    
+}
+
+.tagText{
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.tagKontainer{
+    display: flex;
+    flex-direction: column;
+width: 173px;
+min-height: 29px;
+
+align-items: center;
+
+}
+
+.shuffle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87px;
+    height: 29px;
+    border-radius: 5px;
+    background-color: #6DA44B;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.shuffle:hover{
+    background-color: #5c8742;
+}
+
+#toggleList{
+    display: flex;
+    flex-direction: row;
+    background-color: #54793c;
+    width: 100%;
+    height: 26px;
+}
+
+#panah{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #54793c;
+    width: 15%;
+    height: 26px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#panah:hover{
+    background-color: #65954a;
+}
+
+#huruf_toggle{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    width: 85%;
+    height: 26px;
+    background-color: #395727;
+    
+}
+
+#kontainer_toggle{
+    display: none ;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100px;
+    
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#kontainer_toggle::-webkit-scrollbar{
+    width: 10px;
+    height: 100px;
+    background-color: #395727;
+}
+#kontainer_toggle::-webkit-scrollbar-thumb{
+    background-color: #54793c;
+    width: 1px;
+    border-radius: 10px;
+}
+
+
+.anakToggle{
+    width: 100%;
+    height: 26px;
+    background-color: #65954a;
+    cursor: pointer;
+}
+.anakToggle:hover{
+    background-color: #395727;
+    z-index: 11;
+
+}
+
+.loading{
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    z-index: 11;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.retry{
+    font-size: 15px;
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    z-index: 11;
+    color: white;
+    top: 55%;
+    border: none;
+    background-color: #65954a;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+}
+
+.retry:hover{
+    background-color: #395727;
+    z-index: 11;
+
+}
